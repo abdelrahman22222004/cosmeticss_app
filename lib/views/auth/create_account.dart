@@ -38,7 +38,7 @@ class _LoginPageState extends State<CreateAccountPage> {
               children: [
                 Center(
                   child: SvgPicture.asset(
-                    'assets/svg/create_account.svg',
+                    'assets/vectors/create_account.svg',
                     height: 67.h,
                     width: 62.w,
                   ),

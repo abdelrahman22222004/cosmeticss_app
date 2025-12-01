@@ -61,7 +61,7 @@ class _VerifyCodeState extends State<VerifyCode> {
             children: [
               SizedBox(height: 50.h),
               SvgPicture.asset(
-                'assets/svg/create_account.svg',
+                'assets/vectors/create_account.svg',
                 height: 62.h,
                 width: 67.w,
               ),

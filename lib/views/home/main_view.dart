@@ -24,17 +24,17 @@ class _MainViewState extends State<MainView> {
   ];
 
   final selectedIcons = [
-    'assets/svg/selected_home.svg',
-    'assets/svg/selected_cart.svg',
-    'assets/svg/selected_category.svg',
-    'assets/svg/selected_profile.svg',
+    'assets/vectors/selected_home.svg',
+    'assets/vectors/selected_cart.svg',
+    'assets/vectors/selected_category.svg',
+    'assets/vectors/selected_profile.svg',
   ];
 
   final unselectedIcons = [
-    'assets/svg/un_selected_home.svg',
-    'assets/svg/un_selected_my_cart.svg',
-    'assets/svg/un_selected_categories.svg',
-    'assets/svg/un_selected_profile.svg',
+    'assets/vectors/un_selected_home.svg',
+    'assets/vectors/un_selected_my_cart.svg',
+    'assets/vectors/un_selected_categories.svg',
+    'assets/vectors/un_selected_profile.svg',
   ];
 
   @override

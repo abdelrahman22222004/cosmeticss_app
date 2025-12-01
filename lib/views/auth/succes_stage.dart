@@ -38,7 +38,7 @@ class _SuccesStageState extends State<SuccesStage> {
                     shape: BoxShape.circle,
                   ),
                   child: Lottie.asset(
-                    'assets/lottie/success.json',
+                    'assets/lotties/success.json',
                     height: 100.h,
                     width: 100.w,
                     repeat: false,

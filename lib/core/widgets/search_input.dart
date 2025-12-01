@@ -28,7 +28,7 @@ class SearchInput extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(12.w),
           child: SvgPicture.asset(
-            'assets/svg/search.svg',
+            'assets/vectors/search.svg',
             width: 18.w,
             height: 18.h,
           ),

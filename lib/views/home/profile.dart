@@ -35,14 +35,14 @@ class ProfileView extends StatelessWidget {
                   radius: 50.r,
                   child: CircleAvatar(
                     radius: 46.r,
-                    backgroundImage: const AssetImage("assets/png/pro2.jpg"),
+                    backgroundImage: const AssetImage("assets/images/pro2.jpg"),
                   ),
                 ),
 
                 SizedBox(height: 16.h),
 
                 Text(
-                  "Sara Samer Talaat",
+                  "Abdo Talaat",
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
@@ -60,7 +60,7 @@ class ProfileView extends StatelessWidget {
               children: [
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/svg/edit.svg',
+                    'assets/vectors/edit.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -68,7 +68,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/svg/history.svg',
+                    'assets/vectors/history.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -76,7 +76,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/svg/wavellet.svg',
+                    'assets/vectors/wavellet.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -84,7 +84,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/svg/settings.svg',
+                    'assets/vectors/settings.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -92,7 +92,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/svg/voucher.svg',
+                    'assets/vectors/voucher.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -101,7 +101,7 @@ class ProfileView extends StatelessWidget {
 
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/svg/logout.svg',
+                    'assets/vectors/logout.svg',
                     width: 22.w,
                     height: 22.h,
                   ),

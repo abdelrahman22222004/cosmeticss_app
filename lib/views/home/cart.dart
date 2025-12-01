@@ -10,28 +10,28 @@ class CartView extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<CartItemWidget> products = const [
       CartItemWidget(
-        image: "assets/png/pro2.jpg",
+        image: "assets/images/pro2.jpg",
         title: "Note Cosmetics",
         subTitle: "Ultra rich mascara for lashes",
         price: "350 EGP",
         quantity: 1,
       ),
       CartItemWidget(
-        image: "assets/png/pro2.jpg",
+        image: "assets/images/pro2.jpg",
         title: "ARTDECO",
         subTitle: "Bronzer - 02",
         price: "490 EGP",
         quantity: 2,
       ),
       CartItemWidget(
-        image: "assets/png/pro2.jpg",
+        image: "assets/images/pro2.jpg",
         title: "Channel",
         subTitle: "L’eau de parfum N5",
         price: "15,000 EGP",
         quantity: 1,
       ),
       CartItemWidget(
-        image: "assets/png/pro2.jpg",
+        image: "assets/images/pro2.jpg",
         title: "Channel",
         subTitle: "L’eau de parfum N5",
         price: "15,000 EGP",
@@ -62,7 +62,7 @@ class CartView extends StatelessWidget {
                     ),
                   ),
                   SvgPicture.asset(
-                    "assets/svg/shopping_cart.svg",
+                    "assets/vectors/shopping_cart.svg",
                     height: 26.h,
                     width: 26.w,
                   ),

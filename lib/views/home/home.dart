@@ -27,7 +27,7 @@ class HomeView extends StatelessWidget {
                   width: double.infinity,
                   height: 320.h,
                   child: Image.asset(
-                    'assets/png/layer1.png',
+                    'assets/images/layer1.png',
                     fit: BoxFit.fill,
                   ),
                 ),
@@ -38,7 +38,7 @@ class HomeView extends StatelessWidget {
                     width: MediaQuery.of(context).size.width - 10.w,
                     height: 150.h,
                     child: SvgPicture.asset(
-                      'assets/svg/home_layer2.svg',
+                      'assets/vectors/home_layer2.svg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -63,7 +63,7 @@ class HomeView extends StatelessWidget {
                               ),
                             ),
                             SvgPicture.asset(
-                              'assets/svg/home_layer3.svg',
+                              'assets/vectors/home_layer3.svg',
                               width: 55.w,
                               height: 55.h,
                             ),
@@ -74,7 +74,7 @@ class HomeView extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             SvgPicture.asset(
-                              'assets/svg/home_layer3.svg',
+                              'assets/vectors/home_layer3.svg',
                               width: 55.w,
                               height: 55.h,
                             ),
@@ -116,12 +116,12 @@ class HomeView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
                 ProductCard(
-                  imageUrl: 'assets/png/pro1.jpg',
+                  imageUrl: 'assets/images/pro1.jpg',
                   title: 'Mango',
                   price: '20',
                 ),
                 ProductCard(
-                  imageUrl: 'assets/png/pro2.jpg',
+                  imageUrl: 'assets/images/pro2.jpg',
                   title: 'Mango',
                   price: '20',
                 ),

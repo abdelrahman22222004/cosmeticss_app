@@ -55,8 +55,8 @@ class _TextFormFeildState extends State<TextFormFeild> {
             ? IconButton(
                 icon: SvgPicture.asset(
                   isSeen
-                      ? 'assets/svg/visible_off.svg'
-                      : 'assets/svg/visible_on.svg',
+                      ? 'assets/vectors/visible_off.svg'
+                      : 'assets/vectors/visible_on.svg',
                   width: 22,
                   height: 15,
                 ),

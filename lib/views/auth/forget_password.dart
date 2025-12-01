@@ -30,7 +30,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               SizedBox(height: 100.h),
               Center(
                 child: SvgPicture.asset(
-                  'assets/svg/create_account.svg',
+                  'assets/vectors/create_account.svg',
                   height: 67.h,
                   width: 62.w,
                 ),

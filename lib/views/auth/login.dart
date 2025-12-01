@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 Center(
                   child: Image.asset(
-                    'assets/png/login_img.png',
+                    'assets/images/login_img.png',
                     height: 300.h,
                     width: 250.w,
                   ),

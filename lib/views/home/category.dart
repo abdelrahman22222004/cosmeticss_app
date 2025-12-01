@@ -7,11 +7,11 @@ class CategoryView extends StatelessWidget {
   CategoryView({super.key});
 
   final List<Map<String, dynamic>> categories = [
-    {"name": "Bundles", "image": "assets/png/bundles.png"},
-    {"name": "Perfumes", "image": "assets/png/perfumes.png"},
-    {"name": "Makeup", "image": "assets/png/bundles.png"},
-    {"name": "Skin Care", "image": "assets/png/perfumes.png"},
-    {"name": "Gifts", "image": "assets/png/gifts.png"},
+    {"name": "Bundles", "image": "assets/images/bundles.png"},
+    {"name": "Perfumes", "image": "assets/images/perfumes.png"},
+    {"name": "Makeup", "image": "assets/images/bundles.png"},
+    {"name": "Skin Care", "image": "assets/images/perfumes.png"},
+    {"name": "Gifts", "image": "assets/images/gifts.png"},
   ];
 
   @override
@@ -73,7 +73,7 @@ class CategoryView extends StatelessWidget {
                       GestureDetector(
                         onTap: () {},
                         child: SvgPicture.asset(
-                          "assets/svg/arrow-right.svg",
+                          "assets/vectors/arrow-right.svg",
                           width: 24.w,
                           height: 24.h,
                         ),

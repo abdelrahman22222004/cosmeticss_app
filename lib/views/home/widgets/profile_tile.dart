@@ -34,7 +34,7 @@ class ProfileTile extends StatelessWidget {
           ? null
           : IconButton(
               icon: SvgPicture.asset(
-                'assets/svg/arrow-right.svg',
+                'assets/vectors/arrow-right.svg',
                 width: 24.w,
                 height: 24.h,
               ),

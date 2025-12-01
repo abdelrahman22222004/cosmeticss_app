@@ -48,7 +48,7 @@ class CartItemWidget extends StatelessWidget {
                         padding: EdgeInsets.zero,
                         onPressed: () {},
                         icon: SvgPicture.asset(
-                          'assets/svg/delete.svg',
+                          'assets/vectors/delete.svg',
                           width: 19.w,
                           height: 19.h,
                         ),
