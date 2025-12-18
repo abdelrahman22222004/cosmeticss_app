@@ -69,10 +69,14 @@ class _LoginPageState extends State<CreateAccountPage> {
                 SizedBox(height: 16.h),
                 Row(
                   crossAxisAlignment:
-                      CrossAxisAlignment.start, // مهم علشان الخطأ يظهر طبيعي
+                      CrossAxisAlignment.start,
+                  
+                  
                   children: [
                     SizedBox(
-                      width: 95.w, // خلي للـ dropdown عرض ثابت
+                      width: 95.w,
+            
+            
                       child: AppDropDown(),
                     ),
 
@@ -133,19 +137,7 @@ class _LoginPageState extends State<CreateAccountPage> {
                   },
                 ),
                 SizedBox(height: 16.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text(
-                      'Forget Password?',
-                      style: TextStyle(
-                        color: AppColors.primaryColor,
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ],
-                ),
+            
                 SizedBox(height: 30.h),
                 CustomButton(
                   text: 'Next',

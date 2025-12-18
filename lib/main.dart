@@ -1,5 +1,6 @@
 import 'package:cosmetics/core/helper/app_colors.dart';
 import 'package:cosmetics/core/helper/on_generate_route.dart';
+import 'package:cosmetics/views/home/main_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,12 +22,12 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           onGenerateRoute: AppRouter.routes,
-          initialRoute: 'splash',
 
+          // initialRoute: 'splash',
           theme: ThemeData(
             fontFamily: 'Montserrat',
             scaffoldBackgroundColor: AppColors.backGroundColor,
-
+cardColor: Color(0xffD9D9D9),
             colorScheme: ColorScheme.fromSeed(
               seedColor: AppColors.primaryColor,
             ),
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
 
-          home: child,
+          home: MainView(),
         );
       },
     );

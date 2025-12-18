@@ -34,3 +34,10 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/lotties/
+
+  fonts:
+    - family: Montserrat  
+      fonts:
+        - asset: assets/fonts/montserrat-regular.ttf
+       
+          

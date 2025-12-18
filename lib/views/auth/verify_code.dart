@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:cosmetics/core/helper/app_colors.dart';
 import 'package:cosmetics/core/widgets/custom_button.dart';
+import 'package:cosmetics/views/auth/set_new_password.dart';
 import 'package:cosmetics/views/auth/succes_stage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -9,8 +10,9 @@ import 'package:pin_code_fields/pin_code_fields.dart';
 
 class VerifyCode extends StatefulWidget {
   final String phone;
+  final bool isFromForget;
 
-  const VerifyCode({super.key, required this.phone});
+  const VerifyCode({super.key, required this.phone, this.isFromForget = false});
 
   @override
   State<VerifyCode> createState() => _VerifyCodeState();
@@ -83,7 +85,10 @@ class _VerifyCodeState extends State<VerifyCode> {
                   children: [
                     TextSpan(
                       text: 'We just sent a 4-digit verification code to\n+20 ',
-                      style: TextStyle(fontSize: 14.sp, color: Color(0xff8E8EA9)),
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: Color(0xff8E8EA9),
+                      ),
                     ),
                     TextSpan(
                       text: widget.phone,
@@ -95,7 +100,10 @@ class _VerifyCodeState extends State<VerifyCode> {
                     ),
                     TextSpan(
                       text: '. Enter the code in the box below to continue.',
-                      style: TextStyle(fontSize: 14.sp, color: Color(0xff8E8EA9)),
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: Color(0xff8E8EA9),
+                      ),
                     ),
                   ],
                 ),
@@ -107,7 +115,10 @@ class _VerifyCodeState extends State<VerifyCode> {
                     onPressed: () {},
                     child: Text(
                       'Edit the number',
-                      style: TextStyle(fontSize: 14.sp, color: AppColors.primaryColor),
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: AppColors.primaryColor,
+                      ),
                     ),
                   ),
                 ],
@@ -167,12 +178,27 @@ class _VerifyCodeState extends State<VerifyCode> {
               CustomButton(
                 text: 'Done',
                 onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (context) => SuccesStage(),
-                  );
+                  if (widget.isFromForget) {
+                    // → Forget Password mode
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => SetNewPassword()),
+                    );
+                  } else {
+                    // → Create Account mode
+                    showDialog(
+                      context: context,
+                      builder: (context) => SuccesStage(
+                        title: 'Congratulations',
+
+                        message: 'Your account has been created successfully',
+                        textButton: 'Go to Home',
+                      ),
+                    );
+                  }
                 },
               ),
+
               SizedBox(height: 30.h),
             ],
           ),

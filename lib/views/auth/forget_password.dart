@@ -2,12 +2,13 @@ import 'package:cosmetics/core/widgets/custom_back_button.dart';
 import 'package:cosmetics/core/widgets/custom_button.dart';
 import 'package:cosmetics/core/widgets/custom_text_form_feild.dart';
 import 'package:cosmetics/core/widgets/drop_down.dart';
+import 'package:cosmetics/views/auth/verify_code.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ForgetPassword extends StatefulWidget {
-  ForgetPassword({super.key});
+  const ForgetPassword({super.key});
 
   @override
   State<ForgetPassword> createState() => _ForgetPasswordState();
@@ -92,7 +93,13 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();
-                    Navigator.pushNamed(context, 'verifyCode');
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            VerifyCode(phone: '', isFromForget: true),
+                      ),
+                    );
                   } else {
                     setState(() => autovalidateMode = AutovalidateMode.always);
                   }

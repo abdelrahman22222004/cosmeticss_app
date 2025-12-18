@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     if (formKey.currentState!.validate()) {
                       formKey.currentState!.save();
-                      Navigator.pushNamed(context, 'home');
+                      Navigator.pushNamed(context, 'main');
 
                       showCustomSnackBar(
                         context: context,

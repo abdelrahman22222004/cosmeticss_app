@@ -19,10 +19,12 @@ class ProductCard extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 6.w),
       child: Card(
-        color: AppColors.backGroundColor,
+        color: Theme.of(context).cardColor,
         margin: EdgeInsets.zero,
         elevation: 4,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.r)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.r),
+        ),
         child: SizedBox(
           width: 176.w,
           height: 237.h,

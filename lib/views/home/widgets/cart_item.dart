@@ -110,12 +110,15 @@ class CartItemWidget extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
-                                Icons.remove,
-                                size: 20.sp,
-                                color: quantity == 1
-                                    ? const Color(0x434C6D82)
-                                    : const Color(0xff434C6D),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.remove,
+                                  size: 20.sp,
+                                  color: quantity == 1
+                                      ? const Color(0x434C6D82)
+                                      : const Color(0xff434C6D),
+                                ),
                               ),
                               Text(
                                 quantity.toString(),
@@ -124,10 +127,13 @@ class CartItemWidget extends StatelessWidget {
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
-                              Icon(
-                                Icons.add,
-                                size: 20.sp,
-                                color: const Color(0xff434C6D),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.add,
+                                  size: 20.sp,
+                                  color: const Color(0xff434C6D),
+                                ),
                               ),
                             ],
                           ),
@@ -140,10 +146,7 @@ class CartItemWidget extends StatelessWidget {
             ],
           ),
         ),
-        Divider(
-          color: const Color(0xffB3B3C1).withOpacity(.55),
-          thickness: 1,
-        ),
+        Divider(color: const Color(0xffB3B3C1).withOpacity(.55), thickness: 1),
       ],
     );
   }

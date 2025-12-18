@@ -35,7 +35,11 @@ class AppRouter {
       case 'profile':
         return MaterialPageRoute(builder: (_) => Profile());
       case 'succesStage':
-        return MaterialPageRoute(builder: (_) => SuccesStage());
+        return MaterialPageRoute(builder: (_) => SuccesStage(
+          title: settings.arguments as String,
+          message: settings.arguments as String,
+          textButton: settings.arguments as String,
+        ));
       case 'forgetPassword':
         return MaterialPageRoute(builder: (_) => ForgetPassword());
 

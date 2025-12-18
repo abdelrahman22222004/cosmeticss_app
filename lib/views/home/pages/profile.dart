@@ -38,7 +38,7 @@ class Profile extends StatelessWidget {
                 SizedBox(height: 16.h),
 
                 Text(
-                  "Abdo Talaat",
+                  "Omar Rashed",
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,

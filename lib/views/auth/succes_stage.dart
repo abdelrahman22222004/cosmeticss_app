@@ -6,8 +6,17 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
 
 class SuccesStage extends StatefulWidget {
-  const SuccesStage({super.key});
-  final String title = "Account Activated!";
+  final String title,message,textButton;
+
+
+
+  const SuccesStage({
+    super.key,
+    required this.title,
+    required this.message,
+    required this.textButton,
+
+  });
 
   @override
   State<SuccesStage> createState() => _SuccesStageState();
@@ -46,7 +55,7 @@ class _SuccesStageState extends State<SuccesStage> {
                 ),
                 SizedBox(height: 25.h),
                 Text(
-                  "Account Activated!",
+                  widget.title,
                   style: TextStyle(
                     fontSize: 26.sp,
                     fontWeight: FontWeight.bold,
@@ -54,7 +63,7 @@ class _SuccesStageState extends State<SuccesStage> {
                 ),
                 SizedBox(height: 10.h),
                 Text(
-                  "Congratulations! Your account \nhas been successfully activated",
+                  widget.message,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14.sp,
@@ -64,7 +73,7 @@ class _SuccesStageState extends State<SuccesStage> {
                 ),
                 SizedBox(height: 23.h),
                 CustomButton(
-                  text: 'Go To Home',
+                  text: widget.textButton,
                   onPressed: () {
                     Navigator.pop(context);
                     Navigator.pushReplacement(
