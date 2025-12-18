@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class ProfileView extends StatelessWidget {
-  const ProfileView({super.key});
+class Profile extends StatelessWidget {
+  const Profile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +16,7 @@ class ProfileView extends StatelessWidget {
             width: double.infinity,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                colors: [
-                  Color(0xFFECA4C5),
-                  Color(0x434C6DD4),
-                ],
+                colors: [Color(0xFFECA4C5), Color(0x434C6DD4)],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
@@ -31,7 +28,7 @@ class ProfileView extends StatelessWidget {
             child: Column(
               children: [
                 CircleAvatar(
-                  radius: 50.r,
+                  radius: 46.r,
                   child: CircleAvatar(
                     radius: 46.r,
                     backgroundImage: const AssetImage("assets/images/pro2.jpg"),
@@ -59,7 +56,7 @@ class ProfileView extends StatelessWidget {
               children: [
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/vectors/edit.svg',
+                    'assets/icons/edit.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -67,7 +64,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/vectors/history.svg',
+                    'assets/icons/history.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -75,7 +72,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/vectors/wavellet.svg',
+                    'assets/icons/wavellet.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -83,7 +80,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/vectors/settings.svg',
+                    'assets/icons/settings.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -91,7 +88,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/vectors/voucher.svg',
+                    'assets/icons/voucher.svg',
                     width: 22.w,
                     height: 22.h,
                   ),
@@ -100,7 +97,7 @@ class ProfileView extends StatelessWidget {
 
                 ProfileTile(
                   icon: SvgPicture.asset(
-                    'assets/vectors/logout.svg',
+                    'assets/icons/logout.svg',
                     width: 22.w,
                     height: 22.h,
                   ),

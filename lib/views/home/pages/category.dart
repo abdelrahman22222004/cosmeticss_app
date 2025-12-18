@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CategoryView extends StatelessWidget {
-  CategoryView({super.key});
+class Category extends StatelessWidget {
+  Category({super.key});
 
   final List<Map<String, dynamic>> categories = [
     {"name": "Bundles", "image": "assets/images/bundles.png"},
     {"name": "Perfumes", "image": "assets/images/perfumes.png"},
-    {"name": "Makeup", "image": "assets/images/bundles.png"},
-    {"name": "Skin Care", "image": "assets/images/perfumes.png"},
+    {"name": "Makeup", "image": "assets/images/Makeup.png"},
+    {"name": "Skin Care", "image": "assets/images/Skin Care.png"},
     {"name": "Gifts", "image": "assets/images/gifts.png"},
   ];
 
@@ -73,7 +73,7 @@ class CategoryView extends StatelessWidget {
                       GestureDetector(
                         onTap: () {},
                         child: SvgPicture.asset(
-                          "assets/vectors/arrow-right.svg",
+                          "assets/icons/arrow-right.svg",
                           width: 24.w,
                           height: 24.h,
                         ),

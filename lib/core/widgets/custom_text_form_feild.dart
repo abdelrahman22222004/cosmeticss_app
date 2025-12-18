@@ -8,7 +8,7 @@ class TextFormFeild extends StatefulWidget {
     required this.hintText,
     required this.textInputType,
     this.prefix,
-    this.suffix, 
+    this.suffix,
     this.onSaved,
     this.isPassword = false,
     this.controller,
@@ -21,7 +21,7 @@ class TextFormFeild extends StatefulWidget {
   final String labledText;
   final TextInputType textInputType;
   final Widget? prefix;
-  final Widget? suffix; 
+  final Widget? suffix;
   final bool isPassword;
   final void Function(String?)? onSaved;
   final TextEditingController? controller;
@@ -36,10 +36,8 @@ class _TextFormFeildState extends State<TextFormFeild> {
   bool isSeen = true;
 
   @override
-
   Widget build(BuildContext context) {
     return TextFormField(
-      
       controller: widget.controller,
       validator: widget.validator,
       onSaved: widget.onSaved,
@@ -55,10 +53,10 @@ class _TextFormFeildState extends State<TextFormFeild> {
             ? IconButton(
                 icon: SvgPicture.asset(
                   isSeen
-                      ? 'assets/vectors/visible_off.svg'
-                      : 'assets/vectors/visible_on.svg',
-                  width: 22,
-                  height: 15,
+                      ? 'assets/icons/visible_off.svg'
+                      : 'assets/icons/visible_on.svg',
+                  width: 24,
+                  height: 24,
                 ),
                 onPressed: () {
                   setState(() {
@@ -66,7 +64,7 @@ class _TextFormFeildState extends State<TextFormFeild> {
                   });
                 },
               )
-            : widget.suffix, 
+            : widget.suffix,
       ),
     );
   }

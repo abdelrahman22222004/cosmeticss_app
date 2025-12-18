@@ -1,3 +1,4 @@
+import 'package:cosmetics/core/widgets/custom_back_button.dart';
 import 'package:cosmetics/core/widgets/custom_button.dart';
 import 'package:cosmetics/core/widgets/custom_text_form_feild.dart';
 import 'package:cosmetics/core/widgets/drop_down.dart';
@@ -25,17 +26,22 @@ class _ForgetPasswordState extends State<ForgetPassword> {
         child: Form(
           key: formKey,
           autovalidateMode: autovalidateMode,
+
           child: Column(
             children: [
-              SizedBox(height: 100.h),
+              SizedBox(height: 70.h),
+
+              // ← BACK BUTTON
+              Row(children: [CustomBackButton()]),
+              SizedBox(height: 50.h),
               Center(
                 child: SvgPicture.asset(
-                  'assets/vectors/create_account.svg',
+                  'assets/icons/create_account.svg',
                   height: 67.h,
                   width: 62.w,
                 ),
               ),
-              SizedBox(height: 45.h),
+              SizedBox(height: 40.h),
               Text(
                 'Forget Password',
                 style: TextStyle(
@@ -47,7 +53,11 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               SizedBox(height: 40.h),
               Text(
                 'Please enter your phone number below \n    to recovery your password.',
-                style: TextStyle(fontSize: 14.sp),
+                style: TextStyle(
+                  fontSize: 14.sp,
+                  fontFamily: 'Montserrat',
+                  color: const Color(0xff8E8EA9),
+                ),
               ),
               SizedBox(height: 45.h),
               Row(

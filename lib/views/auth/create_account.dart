@@ -38,7 +38,7 @@ class _LoginPageState extends State<CreateAccountPage> {
               children: [
                 Center(
                   child: SvgPicture.asset(
-                    'assets/vectors/create_account.svg',
+                    'assets/icons/create_account.svg',
                     height: 67.h,
                     width: 62.w,
                   ),
@@ -68,8 +68,16 @@ class _LoginPageState extends State<CreateAccountPage> {
                 ),
                 SizedBox(height: 16.h),
                 Row(
+                  crossAxisAlignment:
+                      CrossAxisAlignment.start, // مهم علشان الخطأ يظهر طبيعي
                   children: [
-                    AppDropDown(),
+                    SizedBox(
+                      width: 95.w, // خلي للـ dropdown عرض ثابت
+                      child: AppDropDown(),
+                    ),
+
+                    SizedBox(width: 8.w),
+
                     Expanded(
                       child: TextFormFeild(
                         controller: phoneController,
@@ -93,7 +101,7 @@ class _LoginPageState extends State<CreateAccountPage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 8.h),
+                SizedBox(height: 16.h),
                 TextFormFeild(
                   labledText: 'Password',
                   hintText: 'Your Password',
@@ -108,7 +116,7 @@ class _LoginPageState extends State<CreateAccountPage> {
                     return null;
                   },
                 ),
-                SizedBox(height: 8.h),
+                SizedBox(height: 16.h),
                 TextFormFeild(
                   labledText: 'Confirm Password',
                   hintText: 'Confirm Password',
@@ -124,7 +132,7 @@ class _LoginPageState extends State<CreateAccountPage> {
                     return null;
                   },
                 ),
-                SizedBox(height: 8.h),
+                SizedBox(height: 16.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [

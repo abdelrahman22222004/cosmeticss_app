@@ -4,16 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: EdgeInsets.symmetric(
-        horizontal: 14.w,
-        vertical: 12.h,
-      ),
+      padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
       child: SafeArea(
         child: Column(
           children: [
@@ -38,7 +35,7 @@ class HomeView extends StatelessWidget {
                     width: MediaQuery.of(context).size.width - 10.w,
                     height: 150.h,
                     child: SvgPicture.asset(
-                      'assets/vectors/home_layer2.svg',
+                      'assets/icons/home_layer2.svg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -63,7 +60,7 @@ class HomeView extends StatelessWidget {
                               ),
                             ),
                             SvgPicture.asset(
-                              'assets/vectors/home_layer3.svg',
+                              'assets/icons/home_layer3.svg',
                               width: 55.w,
                               height: 55.h,
                             ),
@@ -74,7 +71,7 @@ class HomeView extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             SvgPicture.asset(
-                              'assets/vectors/home_layer3.svg',
+                              'assets/icons/home_layer3.svg',
                               width: 55.w,
                               height: 55.h,
                             ),
@@ -115,15 +112,20 @@ class HomeView extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                ProductCard(
-                  imageUrl: 'assets/images/pro1.jpg',
-                  title: 'Mango',
-                  price: '20',
+                Expanded(
+                  child: ProductCard(
+                    imageUrl: 'assets/images/pro1.jpg',
+                    title: 'Mango',
+                    price: '20',
+                  ),
                 ),
-                ProductCard(
-                  imageUrl: 'assets/images/pro2.jpg',
-                  title: 'Mango',
-                  price: '20',
+                // SizedBox(width: 6),
+                Expanded(
+                  child: ProductCard(
+                    imageUrl: 'assets/images/pro2.jpg',
+                    title: 'Mango',
+                    price: '20',
+                  ),
                 ),
               ],
             ),

@@ -26,10 +26,10 @@ class _SplashPageState extends State<SplashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset('assets/vectors/splash.svg', width: 200.w, height: 200.h),
+            SvgPicture.asset('assets/icons/splash.svg', width: 200.w, height: 200.h),
             SizedBox(height: 20),
 
-            SvgPicture.asset('assets/vectors/axon.svg', width: 120.w, height: 46.h),
+            SvgPicture.asset('assets/icons/axon.svg', width: 120.w, height: 46.h),
           ],
         ),
       ),

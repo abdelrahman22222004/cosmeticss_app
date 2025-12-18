@@ -16,7 +16,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   final List<String> _images = [
     'assets/images/on_boarding1.png',
     'assets/images/on_boarding2.png',
-    'assets/vectors/on_boarding3.svg',
+    'assets/icons/on_boarding3.svg',
   ];
 
   final List<bool> _isSvg = [false, false, true];
@@ -158,7 +158,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                                 borderRadius: BorderRadius.circular(12.r),
                               ),
                               child: SvgPicture.asset(
-                                'assets/vectors/arrow.svg',
+                                'assets/icons/arrow.svg',
                                 width: 8.w,
                                 height: 18.h,
                                 fit: BoxFit.none,

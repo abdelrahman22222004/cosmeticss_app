@@ -1,7 +1,7 @@
-import 'package:cosmetics/views/home/cart.dart';
-import 'package:cosmetics/views/home/category.dart';
-import 'package:cosmetics/views/home/home.dart';
-import 'package:cosmetics/views/home/profile.dart';
+import 'package:cosmetics/views/home/pages/cart.dart';
+import 'package:cosmetics/views/home/pages/category.dart';
+import 'package:cosmetics/views/home/pages/home.dart';
+import 'package:cosmetics/views/home/pages/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,25 +16,20 @@ class MainView extends StatefulWidget {
 class _MainViewState extends State<MainView> {
   int currentIndex = 0;
 
-  final screens = [
-    HomeView(),
-    CartView(),
-    CategoryView(),
-    ProfileView(),
-  ];
+  final screens = [Home(), Cart(), Category(), Profile()];
 
   final selectedIcons = [
-    'assets/vectors/selected_home.svg',
-    'assets/vectors/selected_cart.svg',
-    'assets/vectors/selected_category.svg',
-    'assets/vectors/selected_profile.svg',
+    'assets/icons/selected_home.svg',
+    'assets/icons/selected_cart.svg',
+    'assets/icons/selected_category.svg',
+    'assets/icons/selected_profile.svg',
   ];
 
   final unselectedIcons = [
-    'assets/vectors/un_selected_home.svg',
-    'assets/vectors/un_selected_my_cart.svg',
-    'assets/vectors/un_selected_categories.svg',
-    'assets/vectors/un_selected_profile.svg',
+    'assets/icons/un_selected_home.svg',
+    'assets/icons/un_selected_my_cart.svg',
+    'assets/icons/un_selected_categories.svg',
+    'assets/icons/un_selected_profile.svg',
   ];
 
   @override
@@ -61,10 +56,10 @@ class _MainViewState extends State<MainView> {
               label: index == 0
                   ? 'Home'
                   : index == 1
-                      ? 'Cart'
-                      : index == 2
-                          ? 'Category'
-                          : 'Profile',
+                  ? 'Cart'
+                  : index == 2
+                  ? 'Category'
+                  : 'Profile',
             );
           }),
         ),

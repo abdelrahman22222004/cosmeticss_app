@@ -4,11 +4,11 @@ import 'package:cosmetics/views/auth/create_account.dart';
 import 'package:cosmetics/views/auth/forget_password.dart';
 import 'package:cosmetics/views/auth/login.dart';
 import 'package:cosmetics/views/auth/succes_stage.dart';
-import 'package:cosmetics/views/home/cart.dart';
-import 'package:cosmetics/views/home/category.dart';
-import 'package:cosmetics/views/home/home.dart';
+import 'package:cosmetics/views/home/pages/cart.dart';
+import 'package:cosmetics/views/home/pages/category.dart';
+import 'package:cosmetics/views/home/pages/home.dart';
 import 'package:cosmetics/views/home/main_view.dart';
-import 'package:cosmetics/views/home/profile.dart';
+import 'package:cosmetics/views/home/pages/profile.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -27,13 +27,13 @@ class AppRouter {
       case 'main':
         return MaterialPageRoute(builder: (_) => MainView());
       case 'home':
-        return MaterialPageRoute(builder: (_) => HomeView());
+        return MaterialPageRoute(builder: (_) => Home());
       case 'cart':
-        return MaterialPageRoute(builder: (_) => CartView());
+        return MaterialPageRoute(builder: (_) => Cart());
       case 'category':
-        return MaterialPageRoute(builder: (_) => CategoryView());
+        return MaterialPageRoute(builder: (_) => Category());
       case 'profile':
-        return MaterialPageRoute(builder: (_) => ProfileView());
+        return MaterialPageRoute(builder: (_) => Profile());
       case 'succesStage':
         return MaterialPageRoute(builder: (_) => SuccesStage());
       case 'forgetPassword':

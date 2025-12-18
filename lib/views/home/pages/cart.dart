@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class CartView extends StatelessWidget {
-  const CartView({super.key});
+class Cart extends StatelessWidget {
+  const Cart({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class CartView extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w),
+          padding: EdgeInsets.symmetric(horizontal: 10.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -62,7 +62,7 @@ class CartView extends StatelessWidget {
                     ),
                   ),
                   SvgPicture.asset(
-                    "assets/vectors/shopping_cart.svg",
+                    "assets/icons/shopping_cart.svg",
                     height: 26.h,
                     width: 26.w,
                   ),

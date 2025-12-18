@@ -40,13 +40,13 @@ class MyApp extends StatelessWidget {
               ),
 
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(8),
-                borderSide:  BorderSide(color: Colors.grey, width: 1.w),
+                borderRadius: BorderRadius.circular(20),
+                borderSide: BorderSide(color: Colors.grey, width: 1.w),
               ),
 
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
-                borderSide:  BorderSide(color: Colors.grey, width: 1.w),
+                borderSide: BorderSide(color: Colors.grey, width: 1.w),
               ),
 
               focusedBorder: OutlineInputBorder(
